@@ -10,8 +10,9 @@ curl -v -X POST https://api.line.me/v2/bot/message/push \
             "text":"Hello, world1"
         },
         {
-            "type":"text",
-            "text":"Hello, world2"
+            "type": "image",
+            "originalContentUrl": "imageURL",
+            "previewImageUrl": "imageURL"
         }
     ]
 }'
