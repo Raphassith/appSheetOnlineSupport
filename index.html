@@ -46,8 +46,8 @@
         <label for="request"></label>
         <textarea id="request" rows="10" placeholder="ข้อความ...."></textarea>
         <label for="displayName"></label>
-        <input type="text" id="displayName" value="" readonly placeholder="ผู้แจ้ง...">
-        <button onclick="">ส่งข้อความ</button>
+        <input type="text" id="displayName" value="<?= displayName ?>" readonly placeholder="ผู้แจ้ง...">
+        <button onclick="saveRequest()">ส่งข้อความ</button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.6/dist/sweetalert2.all.min.js"></script>
     <script>
