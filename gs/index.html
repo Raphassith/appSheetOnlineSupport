@@ -59,6 +59,8 @@
             google.script.run.saveRequest(userId, displayName, pictureUrl, request);
             Swal.fire('Good job!', 'You clicked the button!','success');
             document.getElementById("request").value = null;
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
         }
     </script>
 </body>
