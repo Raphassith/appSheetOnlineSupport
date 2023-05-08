@@ -8,7 +8,7 @@ function doGet(e) {
   pictureUrl = e.parameter.pictureUrl;
   
   return HtmlService.createTemplateFromFile("index").evaluate().setTitle("ระบบแจ้งซ่อม Online")
-  .addMetaTag('viewport', 'width=device-width, initial-scale=1')
+  .addMetaTag('viewport', 'width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no')
   .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
 }
 
